@@ -252,9 +252,9 @@ DECLARE
 BEGIN
 	diaFinal := (date_trunc('MONTH', $1) + INTERVAL '1 MONTH - 1 day')::DATE;
  	util := date_part('dow', diaFinal);
-	IF util <> 0 OR util <> 6 THEN RETURN diaFinal;
+	IF util <> 0 AND util <> 6 THEN RETURN diaFinal;
 	ELSE
-		IF dia = 0 THEN
+		IF util = 0 THEN
 			dataFinal := (date_trunc('MONTH', $1) + INTERVAL '1 MONTH - 3 day')::DATE;
 		ELSE
 			dataFinal := (date_trunc('MONTH', $1) + INTERVAL '1 MONTH - 2 day')::DATE;
