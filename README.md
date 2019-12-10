@@ -2,7 +2,7 @@
 ## BNT(Base nacional de transito)
 ### Simulação de BNT utilizando _PostgreSQL_
 #### -*Conteudo do repositorio*:
----
+
 >
 > * [*Script do Banco*](https://github.com/Brunbg/p3-BD2/blob/master/documentos/1-script-criacao.sql)
 > * [*Inserts*](https://github.com/Brunbg/p3-BD2/blob/master/documentos/2-inserts.sql)
