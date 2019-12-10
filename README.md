@@ -12,3 +12,15 @@
           
           https://blog.da2k.com.br/2015/02/08/aprenda-markdown/
           https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8
+     
+
+
+
+<div class="panel panel-danger">
+*Danger*
+<div class="panel-body">
+
+DANGER DESCRIPTION
+
+</div>
+</div>
