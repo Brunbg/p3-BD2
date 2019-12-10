@@ -52,7 +52,7 @@
 >|IDPROPRIETARIO :small_blue_diamond:|DATAVENC|
 >|DATACOMPRA|PAGO|
 >|DATAVENDA| |  
-
+> ----
 ##### *Acesso ao modelo de esquema Relacional* (D.E.R.) [:arrow_upper_right:](https://github.com/Brunbg/p3-BD2/blob/master/documentos/20192%20-%20Projeto%20da%20Disciplina%20-%20BD%20Relacional.pdf)
 
 
