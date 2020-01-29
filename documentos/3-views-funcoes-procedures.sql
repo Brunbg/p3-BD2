@@ -371,3 +371,24 @@ LANGUAGE plpgsql;
 CREATE TRIGGER executa_insercao_veiculo
 AFTER INSERT ON veiculo
 FOR EACH ROW EXECUTE PROCEDURE insercao_veiculo();
+
+--Tabela Infracao por pontos
+CREATE OR REPLACE FUNCTION PONTUACAO (tipo integer)
+RETURNS TABLE (
+		idinfracao integer,
+		descriacao text,
+		valor numeric,
+		pontos integer
+)
+language plpgsql
+AS $$
+BEGIN
+	RETURN QUERY
+	SELECT infracao.idinfracao,
+			infracao.descricao,
+			infracao.valor,
+			infracao.pontos
+	FROM infracao
+	WHERE infracao.pontos = tipo
+	ORDER BY infracao.idinfracao;
+END; $$;
